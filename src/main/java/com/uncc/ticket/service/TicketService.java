@@ -24,6 +24,8 @@ public class TicketService {
         return ticketRepository.save(tickets);
     }
 
+    public void removeTicket(TicketEntity tickets){ ticketRepository.delete(tickets); }
+
     public List<TicketEntity> getAllTickets(){
         return ticketRepository.findAll();
     }
